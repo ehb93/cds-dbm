@@ -61,9 +61,9 @@ if [ -z "${JAVA_HOME}" ]; then
 fi
 
 if [ -z "${JAVA_HOME}" ]; then
+  echo "Direcotio: $(pwd)"
   echo "Java home para comprobar es $JAVA_HOME"
   JAVA_PATH="$(which java)"
-  echo "Java home para comprobar es $JAVA_PATH"
   if [ -z "${JAVA_PATH}" ]; then
     echo "Cannot find java in your path. Install java or use the JAVA_HOME environment variable"
   fi
