@@ -15,4 +15,4 @@ $BODY$
   LANGUAGE plpgsql VOLATILE
   COST 100;
 ALTER FUNCTION drop_schema(text)
-  OWNER TO postgres;
+  OWNER TO CURRENT_ROLE;
